@@ -1,0 +1,21 @@
+in each page, the Grid element is imported and used instead of the <div> components
+
+add a wrapper grid to App.js -> <Grid container>
+
+you can add the CommonButton and declare const buttonStyles = {fontSize:'', fontWeight, backgroundcolor}
+
+import <ThemeProvider> and wrap everything in the react.dom components
+create it in a file called dashboardTheme or something of the sort
+
+
+red for button #cb363b
+red for calculator #cb333b
+text #5b6770
+
+#0D47A1 cobalt blue
+#0F50AB sapphire
+#1976D2 french blue
+#42A5F5 argentinian blue
+#90CAF9 light sky blue
+#F5A15C sandy brown
+#EEEEEE anti-flash white
