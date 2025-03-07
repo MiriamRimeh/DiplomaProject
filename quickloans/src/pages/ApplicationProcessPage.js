@@ -1,6 +1,6 @@
 import { Toolbar } from "@mui/material";
 import TopAppBar from "../components/Navbar/AppBar";
-import ApplicationStepper from "../components/ApplicationForm/ApplicationForm";
+import ApplicationStepper from "../components/ApplicationForm/Stepper";
 
 
 function ApplicationProcessPage() {

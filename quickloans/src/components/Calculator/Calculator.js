@@ -22,37 +22,12 @@ export default function Calculator() {
     setLoanAmount(newValue);
   };
 
-{/*
-  const handleLoanAmountInputChange = (event) => {
-    setLoanAmount(event.target.value === '' ? 0 : Number(event.target.value));
-  };
-  const handleLoanAmountBlur = () => {
-    if (loanAmount < 300) {
-      setLoanAmount(300);
-    } else if (loanAmount > 5000) {
-      setLoanAmount(5000);
-    }
-  };
-
-*/}
   // Loan Period State
   const [loanPeriod, setLoanPeriod] = React.useState(5);
   const handleLoanPeriodChange = (event, newValue) => {
     setLoanPeriod(newValue);
   };
 
-  {/*
-  const handleLoanPeriodInputChange = (event) => {
-    setLoanPeriod(event.target.value === '' ? 0 : Number(event.target.value));
-  };
-  const handleLoanPeriodBlur = () => {
-    if (loanPeriod < 3) {
-      setLoanPeriod(3);
-    } else if (loanPeriod > 36) {
-      setLoanPeriod(36);
-    }
-  };
-*/}
 
   const monthlyInstallment = loanAmount / loanPeriod;
   const totalMoneyToGiveBack = loanAmount * (1 + (loanPeriod / 12) * 0.06); //TODO: make the 0.06 a variable
@@ -66,7 +41,7 @@ export default function Calculator() {
       {/* Loan Amount Row */}
       <Grid container spacing={2} alignItems="center">
         <Grid item xs={4}>
-          <Typography sx={calculatorStyles.text}>Сума (лв)</Typography>
+          <Typography variant="default" sx={calculatorStyles.text}>Сума (лв)</Typography>
         </Grid>
         <Grid item xs={8}>
           <Slider
@@ -79,28 +54,12 @@ export default function Calculator() {
             sx={calculatorStyles.slider}
           />  
         </Grid>
-{/*
-        <Grid item xs>
-          <Input
-            value={loanAmount}
-            onChange={handleLoanAmountInputChange}
-            onBlur={handleLoanAmountBlur}
-            inputProps={{
-              step: 100,
-              min: 300,
-              max: 5000,
-              type: 'number',
-            }}
-            sx={calculatorStyles.input}
-          />
-        </Grid>
-        */}
       </Grid>
 
       {/* Loan Period Row */}
       <Grid container spacing={2} alignItems="center" sx={calculatorStyles.grid}>
         <Grid item xs={4}>
-          <Typography sx={calculatorStyles.text}>Период </Typography>
+          <Typography variant="default"  sx={calculatorStyles.text}>Период </Typography>
         </Grid>
         <Grid item xs={8}>
           <Slider
@@ -113,20 +72,6 @@ export default function Calculator() {
             sx={calculatorStyles.slider}
           />
         </Grid>
-{/*        <Grid item xs>
-          <Input
-            value={loanPeriod}
-            onChange={handleLoanPeriodInputChange}
-            onBlur={handleLoanPeriodBlur}
-            inputProps={{
-              step: 1,
-              min: 3,
-              max: 36,
-              type: 'number',
-            }}
-            sx={calculatorStyles.input}
-          />
-        </Grid> */}
       </Grid>
 
       {/* Monthly Installment Display */}

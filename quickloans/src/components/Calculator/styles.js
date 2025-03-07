@@ -3,7 +3,6 @@
  */
 
 import '@fontsource/roboto/300.css';
-import { borderColor, height } from '@mui/system';
 
 //TODO
 export const calculatorStyles = {
@@ -18,13 +17,9 @@ export const calculatorStyles = {
         backgroundColor: '#ffffff'
     },
     text: {
-        '& span': {
-            marginLeft: '-10px',
-            fontWeight: '600px',
-            fontSize: '16px',
-            color: 'rgba(58,59,60)',
-            
-        },
+        fontWeight: '700px',
+        fontSize: '18px',
+        color: 'rgba(58,59,60)',
     },
     button: {
         padding: '10px 20px', 
