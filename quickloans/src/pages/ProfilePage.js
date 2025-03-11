@@ -1,12 +1,13 @@
 import { Toolbar } from "@mui/material";
-import TopAppBar from "../components/Navbar/AppBar";
+//import TopAppBar from "../components/Navbar/AppBar";
+import ProfileMenu from "../components/Profile/ProfileMenu";
 
 
 function ProfilePage() {
     return (
       <div className="App">
-        <TopAppBar></TopAppBar>
         <Toolbar></Toolbar>
+        <ProfileMenu></ProfileMenu>
       </div>
     );
   }
