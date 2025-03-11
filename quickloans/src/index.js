@@ -9,7 +9,10 @@ import {
   Route,
 } from "react-router-dom";
 import ApplyPage from './pages/ApplyPage';
+import HomePage from './pages/HomePage';
+import FAQPage from './pages/FAQPage';
 import ApplicationProcessPage from './pages/ApplicationProcessPage';
+import ProfilePage from './pages/ProfilePage';
 import { ThemeProvider } from '@mui/material/styles';
 import {mainTheme} from './theme'
 
@@ -18,10 +21,12 @@ root.render(
   <ThemeProvider theme={mainTheme}>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={<App />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/apply" element={<ApplyPage />} />
         <Route path="/apply-form" element={<ApplicationProcessPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>

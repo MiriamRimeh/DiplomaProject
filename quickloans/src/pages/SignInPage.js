@@ -2,7 +2,7 @@ import { Toolbar } from "@mui/material";
 import TopAppBar from "../components/Navbar/AppBar";
 
 
-function HomePage() {
+function SignIn() {
     return (
       <div className="App">
         <TopAppBar></TopAppBar>
@@ -11,4 +11,4 @@ function HomePage() {
     );
   }
   
-  export default HomePage;
+  export default SignIn;
