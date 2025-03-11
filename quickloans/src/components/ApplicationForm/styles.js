@@ -4,7 +4,7 @@
 
 export const stepperStyles = {
     box: {
-
+        
     },
     textHeaders: {
             fontWeight: '800px',

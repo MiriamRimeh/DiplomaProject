@@ -10,6 +10,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 const TopAppBar = () => {
     const navigate = useNavigate();
+
     return (
         <Box sx={navbarStyles.box}>
             <AppBar 

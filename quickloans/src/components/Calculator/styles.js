@@ -3,18 +3,16 @@
  */
 
 import '@fontsource/roboto/300.css';
+import { alignProperty } from '@mui/material/styles/cssUtils';
 
 //TODO
 export const calculatorStyles = {
     boxMain: {
         textAlign: 'left', 
         width: '400px', 
-        height: '600px',
-        margin: 'auto', 
-        paddingLeft: 2, 
-        paddingRight: 2,
-        paddingTop: 5,
-        backgroundColor: '#ffffff'
+        margin: 'auto 10em auto auto ', 
+        padding: '3em 1em',
+        backgroundColor: '#EEEEEE',
     },
     text: {
         fontWeight: '700px',
@@ -33,9 +31,9 @@ export const calculatorStyles = {
     },
     boxButton: {
         textAlign: 'center', 
-        marginTop: 4 
+        margin: '2em auto auto',
+        
     },
-
     input: {
         width: '80px',
 
@@ -55,6 +53,5 @@ export const calculatorStyles = {
             color: "#90CAF9"
         },
         width: '100%'
-    
     }
 }

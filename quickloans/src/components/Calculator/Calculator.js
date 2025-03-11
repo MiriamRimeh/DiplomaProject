@@ -73,7 +73,7 @@ export default function Calculator() {
           />
         </Grid>
       </Grid>
-
+      
       {/* Monthly Installment Display */}
       <Box sx={calculatorStyles.box}>
         <Typography variant="default" sx={calculatorStyles.text}>

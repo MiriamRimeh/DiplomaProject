@@ -7,6 +7,8 @@ you can add the CommonButton and declare const buttonStyles = {fontSize:'', font
 import <ThemeProvider> and wrap everything in the react.dom components
 create it in a file called dashboardTheme or something of the sort
 
+Is ThemeProvider worth using? I'm already doing the styles in a different files.
+
 
 red for button #cb363b
 red for calculator #cb333b
@@ -21,3 +23,12 @@ text #5b6770
 #EEEEEE anti-flash white
 
 https://coolors.co/visualizer/0d47a1-0f50ab-1976d2-42a5f5-f5a15c
+
+/* top and bottom | left and right */
+margin: 5% auto;
+
+/* top | left and right | bottom */
+margin: 1em auto 2em;
+
+/* top | right | bottom | left */
+margin: 2px 1em 0 auto;

@@ -10,17 +10,21 @@ import {
 } from "react-router-dom";
 import ApplyPage from './pages/ApplyPage';
 import ApplicationProcessPage from './pages/ApplicationProcessPage';
+import { ThemeProvider } from '@mui/material/styles';
+import {mainTheme} from './theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/home" element={<App />} />
-    <Route path="/apply" element={<ApplyPage />} />
-    <Route path="/apply-form" element={<ApplicationProcessPage />} />
-  </Routes>
-</BrowserRouter>
+  <ThemeProvider theme={mainTheme}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/home" element={<App />} />
+        <Route path="/apply" element={<ApplyPage />} />
+        <Route path="/apply-form" element={<ApplicationProcessPage />} />
+      </Routes>
+    </BrowserRouter>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
